@@ -19,6 +19,8 @@
                 @foreach ($datas as $row)
                     {{-- <label for="">ID INTERNSHIP</label> --}}
                     <input type="text" value="{{$row->id}}" name="internship_id" hidden></>
+                    <h5 for="">Judul Laporan KP</h5>
+                    <textarea class="form-control" id="" rows="3">{{$row->title}}</textarea>
                 @endforeach
             </div>
             
@@ -64,7 +66,7 @@
                                 {{ method_field('DELETE') }}
 
                                 <div class="form-group">
-                                    <input type="submit" class="btn btn-danger" value="Delete">
+                                    <input type="submit" class="btn btn-primary" value="Delete">
                                 </div>
                             </form>
                         </td>
